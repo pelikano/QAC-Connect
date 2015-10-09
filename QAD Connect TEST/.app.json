@@ -1,4 +1,53 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true
+  "views": [
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "homeView",
+      "components": [],
+      "title": "QAD Connect",
+      "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "authenticationView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "qadConnectBackend",
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "homeView",
+          "enableRegistration": false
+        }
+      ],
+      "title": "Authentication",
+      "addToNavigation": false
+    }
+  ],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "qadConnectBackend",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
+      "title": "QAD Connect / QAD Connect Backend",
+      "source": "everlive",
+      "everliveKey": "maHXKmXBq0kYB1u4",
+      "offlineStorage": true
+    },
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "anacapa",
+      "title": "Inbox Anacapa",
+      "source": "json",
+      "url": "http://coli22:23000/qad-acmeui/api/qracore/inboxdata?loadAll=true&domainCode=10USA&entityCode=10CORPCONS"
+    }
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "tabstrip",
+  "view": "homeView",
+  "transition": "slide",
+  "skin": "flat"
 }

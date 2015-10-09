@@ -67,7 +67,7 @@ app.authenticationView = kendo.observable({
                     return false;
                 }
 
-               app.mobileApp.navigate('components/homeView/view.html');
+               app.mobileApp.navigate('components/dataListView/view.html');
             }
         });
 

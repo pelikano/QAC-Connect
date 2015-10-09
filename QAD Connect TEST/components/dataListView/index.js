@@ -13,16 +13,22 @@ app.dataListView = kendo.observable({
             type: 'json',
             transport: {
                 read: {
+                    type: "GET",
+                    headers: {"Authorization" : "Basic " + btoa("mfg:")},
                     url: dataProvider.url
                 }
             },
 
             schema: {
-                data: 'hola',
+                data: 'data',
                 model: {
                     fields: {
-                        'Text': {
-                            field: 'Text',
+                        'workspaceNameExpanded': {
+                            field: 'workspaceNameExpanded',
+                            defaultValue: ''
+                        },
+                        'unreadNotifications': {
+                            field: 'unreadNotifications',
                             defaultValue: ''
                         },
                     }

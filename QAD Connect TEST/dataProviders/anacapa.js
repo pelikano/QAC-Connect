@@ -2,7 +2,7 @@
 
 (function() {
     app.data.anacapa = {
-        url: 'http://coli22:23000/qad-acmeui/api/qracore/inboxdata?loadAll=true&domainCode=10USA&entityCode=10CORPCONS'
+        url: 'http://vmfvp02:22010/qad-central/api/qracore/inboxdata?loadAll=true&domainCode=Domain1&entityCode=1000'
     };
 
 }());

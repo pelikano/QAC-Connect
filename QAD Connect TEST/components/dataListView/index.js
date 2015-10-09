@@ -18,7 +18,6 @@ app.dataListView = kendo.observable({
                     url: dataProvider.url
                 }
             },
-
             schema: {
                 data: 'data',
                 model: {

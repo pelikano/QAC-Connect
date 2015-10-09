@@ -108,6 +108,20 @@
 
 /* START_CUSTOM_CODE_kendoUiMobileApp */
 
+.km-view .km-navbar {
+    background-color: #03A9F4;
+    color: #fff;
+}
+
+.km-android .km-navbar .km-view-title /* Before Q2 2012 SP1 */
+{
+    display: inline-block;
+}
+
+.km-android .km-navbar .km-view-title /* After Q2 2012 SP1 */
+{
+    visibility: visible;
+}
 
 /* END_CUSTOM_CODE_kendoUiMobileApp */
 

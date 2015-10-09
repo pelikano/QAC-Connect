@@ -25,6 +25,25 @@
       ],
       "title": "Authentication",
       "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "dataListView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:list",
+          "name": "dataListViewModel",
+          "dataProvider": "anacapa",
+          "collection": "hola",
+          "headerField": "Text",
+          "masterDetails": true,
+          "pullToRefresh": true,
+          "endlessScroll": false
+        }
+      ],
+      "title": "Notification List",
+      "addToNavigation": true,
+      "icon": "organize"
     }
   ],
   "dataProviders": [
